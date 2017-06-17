@@ -1,0 +1,17 @@
+void try_block(int tab, leaf_t &leaf);
+void function_try_block(int tab, leaf_t &leaf);
+void handler_seq(int tab, leaf_t &leaf);
+void handler(int tab, leaf_t &leaf);
+void exception_declaration(int tab, leaf_t &leaf);
+void exception_specification(int tab, leaf_t &leaf);
+void dynamic_exception_specification(int tab, leaf_t &leaf);
+void type_id_list(int tab, leaf_t &leaf);
+void noexcept_specification(int tab, leaf_t &leaf);
+void abstract_declarator(int tab, leaf_t &leaf);
+void attribute_specifier_seq(int tab, leaf_t &leaf);
+void compound_statement(int tab, leaf_t &leaf);
+void constant_expression(int tab, leaf_t &leaf);
+void ctor_initializer(int tab, leaf_t &leaf);
+void declarator(int tab, leaf_t &leaf);
+void type_id(int tab, leaf_t &leaf);
+void type_specifier_seq(int tab, leaf_t &leaf);

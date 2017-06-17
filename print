@@ -1,0 +1,21 @@
+#!/bin/bash
+step=$1
+start_line=1
+end_line=$step
+while [[ 1 ]]
+do
+    sed -n "$start_line, ${end_line}p" output
+    read cmd
+    case $cmd in
+        p)
+        end_line=`expr $start_line - 1`
+        start_line=`expr $start_line - $step`
+        ;;
+        *)
+        start_line=`expr $end_line + 1`
+        end_line=`expr $end_line + $step`
+        ;;
+    esac
+
+done
+

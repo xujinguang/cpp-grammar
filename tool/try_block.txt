@@ -1,0 +1,23 @@
+try_block :
+try compound_statement handler_seq
+function_try_block :
+try ctor_initializer opt compound_statement handler_seq
+handler_seq :
+handler handler_seq opt
+handler :
+catch ( exception_declaration ) compound_statement
+exception_declaration :
+attribute_specifier_seq opt type_specifier_seq declarator
+attribute_specifier_seq opt type_specifier_seq abstract_declarator opt
+...
+exception_specification :
+dynamic_exception_specification
+noexcept_specification
+dynamic_exception_specification :
+throw ( type_id_list opt )
+type_id_list :
+type_id ... opt
+type_id_list , type_id ... opt
+noexcept_specification :
+noexcept ( constant_expression )
+noexcept

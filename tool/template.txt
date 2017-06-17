@@ -1,0 +1,37 @@
+template_declaration :
+template < template_parameter_list > declaration
+template_parameter_list :
+template_parameter
+#template_parameter_list , template_parameter
+template_parameter, template_parameter
+template_parameter :
+type_parameter
+parameter_declaration
+type_parameter :
+type_parameter_key ... opt ID opt
+type_parameter_key ID opt = type_id
+template < template_parameter_list > type_parameter_key ... opt ID opt
+template < template_parameter_list > type_parameter_key ID opt = id_expression
+type_parameter_key :
+class
+typename
+simple_template_id :
+template_name < template_argument_list opt >
+template_id :
+simple_template_id
+operator_function_id < template_argument_list opt >
+literal_operator_id < template_argument_list opt >
+template_argument_list :
+template_argument ... opt
+template_argument_list , template_argument ... opt
+template_argument :
+constant_expression
+type_id
+id_expression
+typename_specifier :
+typename nested_name_specifier ID
+typename nested_name_specifier template opt simple_template_id
+explicit_instantiation :
+extern opt template declaration
+explicit_specialization :
+template < > declaration

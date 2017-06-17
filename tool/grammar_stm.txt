@@ -1,0 +1,49 @@
+statement :
+labeled_statement
+attribute_specifier_seq opt expression_statement
+attribute_specifier_seq opt compound_statement
+attribute_specifier_seq opt selection_statement
+attribute_specifier_seq opt iteration_statement
+attribute_specifier_seq opt jump_statement
+declaration_statement
+attribute_specifier_seq opt try_block
+labeled_statement :
+attribute_specifier_seq opt ID : statement
+attribute_specifier_seq opt case constant_expression : statement
+attribute_specifier_seq opt default : statement
+expression_statement :
+expression opt ;
+compound_statement :
+{ statement_seq opt }
+statement_seq :
+statement
+statement_seq statement
+selection_statement :
+if ( condition ) statement
+if ( condition ) statement else statement
+switch ( condition ) statement
+condition :
+expression
+attribute_specifier_seq opt decl_specifier_seq declarator = initializer_clause
+attribute_specifier_seq opt decl_specifier_seq declarator braced_init_list
+iteration_statement :
+while ( condition ) statement
+do statement while ( expression ) ;
+for ( for_init_statement condition opt ; expression opt ) statement
+for ( for_range_declaration : for_range_initializer ) statement
+for_init_statement :
+expression_statement
+simple_declaration
+for_range_declaration :
+attribute_specifier_seq opt decl_specifier_seq declarator
+for_range_initializer :
+expression
+braced_init_list
+jump_statement :
+break ;
+continue ;
+return expression opt ;
+return braced_init_list ;
+goto ID ;
+declaration_statement :
+block_declaration

@@ -1,0 +1,1 @@
+Usage: ./XXX  grammar.txt

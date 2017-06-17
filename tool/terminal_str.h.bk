@@ -1,0 +1,131 @@
+"ALIGNAS",
+"ALIGNOF",
+"ASM",
+"AUTO",
+"BOOL",
+"BREAK",
+"CASE",
+"CATCH",
+"CHAR",
+"CHAR16_T",
+"CHAR32_T",
+"CLASS",
+"CONST",
+"CONSTEXPR",
+"CONST_CAST",
+"CONTINUE",
+"DECLTYPE",
+"DEFAULT",
+"DELETE",
+"DO",
+"DOUBLE",
+"DYNAMIC_CAST",
+"ELSE",
+"ENUM",
+"EXPLICIT",
+"EXPORT",
+"EXTERN",
+"FALSE",
+"FLOAT",
+"FOR",
+"FRIEND",
+"FINAL",
+"GOTO",
+"IF",
+"INLINE",
+"INT",
+"LONG",
+"MUTABLE",
+"NAMESPACE",
+"NEW",
+"NOEXCEPT",
+"NULLPTR",
+"OPERATOR",
+"OVERRIDE",
+"PRIVATE",
+"PROTECTED",
+"PUBLIC",
+"REGISTER",
+"REINTERPRET_CAST",
+"RETURN",
+"SHORT",
+"SIGNED",
+"SIZEOF",
+"STATIC",
+"STATIC_ASSERT",
+"STATIC_CAST",
+"STRUCT",
+"SWITCH",
+"TEMPLATE",
+"THIS",
+"THREAD_LOCAL",
+"THROW",
+"TRUE",
+"TRY",
+"TYPEDEF",
+"TYPEID",
+"TYPENAME",
+"UNION",
+"UNSIGNED",
+"USING",
+"VIRTUAL",
+"VOID",
+"VOLATILE",
+"WCHAR_T",
+"WHILE",
+"L_BRACE", //{
+"R_BRACE", // }
+"L_BRACKET", // [
+"R_BRACKET", // ]
+"HASH", // #
+"D_HASH", // ##
+"L_PARENTHESIS", // (
+"R_PARENTHESIS", // )
+"SEMICOLON", // ;
+"COLON", // :
+"ELLIPSIS", // ...
+"QUESTION", // ?
+"D_COLON", // ::
+"DOT", // .
+"DOT_ASTERISK", // .*
+"ADD", // +
+"MINUS", // -
+"ASTERISK", // *
+"DIV", // /
+"MOD", // %
+"AND", // &
+"OR", // |
+"XOR", // ^
+"INVERT", // ~
+"NOT", // !
+"ASSIGN", // =
+"LESS", // <
+"GREATER", // >
+"C_ADD", // +=
+"C_MINUS", // -=
+"C_MUL", // *=
+"C_DIV", // /=
+"C_MOD", // %=
+"C_AND", // &=
+"C_OR", // |=
+"C_XOR", // ^=
+"LSHIFT", // <<
+"RSHIFT", // >>
+"C_RSHIFT", // >>=
+"C_LSHIFT", // <<=
+"EQUAL", // ==
+"NOT_EQUAL", // !=
+"LESS_EQUAL", // <=
+"GREATER_EQUAL", // >=
+"LAND", // &&
+"LOR", // ||
+"INC", // ++
+"DEC", // --
+"COMMA", // ,
+"ARROW", // ->
+"ARROW_ASTERISK", // ->*
+"NEW_ARRAY", // NEW[]
+"DELELTE_ARRAY", //DELETE[]
+"LITERAL",
+"ID",
+"STR",

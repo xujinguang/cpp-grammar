@@ -1,0 +1,106 @@
+decl_specifier :
+storage_class_specifier
+type_specifier
+function_specifier
+friend
+typedef
+constexpr
+decl_specifier_seq :
+decl_specifier attribute_specifier_seq opt
+decl_specifier decl_specifier_seq
+storage_class_specifier :
+register
+static
+thread_local
+extern
+mutable
+function_specifier :
+inline
+virtual
+explicit
+type_specifier :
+trailing_type_specifier
+class_specifier
+enum_specifier
+trailing_type_specifier :
+simple_type_specifier
+elaborated_type_specifier
+typename_specifier
+cv_qualifier
+cv_qualifier :
+const
+volatile
+type_specifier_seq :
+type_specifier attribute_specifier_seq opt
+type_specifier type_specifier_seq
+trailing_type_specifier_seq :
+trailing_type_specifier attribute_specifier_seq opt
+trailing_type_specifier trailing_type_specifier_seq
+simple_type_specifier :
+nested_name_specifier opt type_name
+nested_name_specifier template simple_template_id
+char
+char16_t
+char32_t
+wchar_t
+bool
+short
+int
+long
+signed
+unsigned
+float
+double
+void
+auto
+decltype_specifier
+type_name :
+class_name
+enum_name
+typedef_name
+simple_template_id
+decltype_specifier :
+decltype ( expression )
+decltype ( auto )
+elaborated_type_specifier :
+class_key attribute_specifier_seq opt nested_name_specifier opt ID
+class_key simple_template_id
+class_key nested_name_specifier template opt simple_template_id
+enum nested_name_specifier opt ID
+class_key :
+class
+struct
+union
+enum_specifier :
+enum_head { enumerator_list opt }
+enum_head { enumerator_list , }
+enum_head :
+enum_key attribute_specifier_seq opt ID opt enum_base opt
+enum_key attribute_specifier_seq opt nested_name_specifier ID
+enum_base opt
+opaque_enum_declaration :
+enum_key attribute_specifier_seq opt ID enum_base opt ;
+enum_key :
+enum
+enum class
+enum struct
+enum_base :
+: type_specifier_seq
+enumerator_list :
+enumerator_definition
+enumerator_list , enumerator_definition
+enumerator_definition :
+enumerator
+enumerator = constant_expression
+enumerator :
+ID attribute_specifier_seq opt
+nested_name_specifier :
+::
+type_name ::
+namespace_name ::
+decltype_specifier ::
+nested_name_specifier ID ::
+nested_name_specifier template opt simple_template_id ::
+namespace_name :
+original_namespace_name
+namespace_alias

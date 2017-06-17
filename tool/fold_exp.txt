@@ -1,0 +1,38 @@
+fold_expression :
+	( cast_expression fold_operator ... )
+	( ... fold_operator cast_expression )
+	( cast_expression fold_operator ... fold_operator cast_expression )
+fold_operator :
+	+
+	-
+	*
+	/
+	%
+	^
+	&
+	|
+	<<
+	>>
+	+=
+	-=
+	*=
+	/=
+	%=
+	^=
+	&=
+	|=
+	<<=
+	>>=
+	=
+	==
+	!=
+	<
+	>
+	<=
+	>=
+	&&
+	||
+	,
+	.*
+	->*
+

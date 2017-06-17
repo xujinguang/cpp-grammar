@@ -1,0 +1,26 @@
+lambda_expression :
+	lambda_introducer lambda_declarator opt compound_statement
+lambda_introducer :
+	[ lambda_capture opt ]
+lambda_capture :
+	capture_default
+	capture_list
+	capture_default , capture_list
+capture_default :
+	&=
+capture_list :
+	capture ... opt
+	capture_list , capture ... opt
+capture :
+	simple_capture
+	init_capture
+simple_capture :
+	id
+	& id
+	this
+init_capture :
+	id initializer
+	& id initializer
+lambda_declarator :
+	( parameter_declaration_clause ) mutable opt
+	exception_specification opt attribute_specifier_seq opt trailing_return_type opt
