@@ -1,0 +1,11 @@
+digraph{
+    node [shape = record];
+    edge [color = black];
+
+    parameter_declaration_clause [label = "parameter-declaration-clause"];
+    A [label = "parameter-declaration-list opt ... opt"];
+    B [label = "parameter-declaration-list, ..."];
+
+    parameter_declaration_clause -> A;
+    parameter_declaration_clause -> B;
+}

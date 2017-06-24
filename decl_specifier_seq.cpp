@@ -367,41 +367,6 @@ void type_name(int tab, leaf_t &leaf)
 	push_back(leaf, tmp_leaf);
 }
 
-void class_name(int tab, leaf_t &leaf)
-{
-	leaf_t new_leaf, tmp_leaf;
-	TAB_FUNCTION(tab);
-
-	OUTPUT(tab + 1, "ID");
-	new_leaf.clear();
-	push_back(new_leaf, ID);
-	insert(tmp_leaf, new_leaf);
-	push_back(leaf, tmp_leaf);
-}
-
-void enum_name(int tab, leaf_t &leaf)
-{
-	leaf_t new_leaf, tmp_leaf;
-	TAB_FUNCTION(tab);
-
-	OUTPUT(tab + 1, "ID");
-	new_leaf.clear();
-	push_back(new_leaf, ID);
-	insert(tmp_leaf, new_leaf);
-	push_back(leaf, tmp_leaf);
-}
-
-void typedef_name(int tab, leaf_t &leaf)
-{
-	leaf_t new_leaf, tmp_leaf;
-	TAB_FUNCTION(tab);
-
-	OUTPUT(tab + 1, "ID");
-	new_leaf.clear();
-	push_back(new_leaf, ID);
-	insert(tmp_leaf, new_leaf);
-	push_back(leaf, tmp_leaf);
-}
 
 void decltype_specifier(int tab, leaf_t &leaf)
 {
